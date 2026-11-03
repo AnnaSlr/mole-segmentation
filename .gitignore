@@ -1,0 +1,13 @@
+# Data and model weights
+data/raw/
+data/processed/
+data/outputs/
+*.pth
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+.vscode/
+.ruff_cache/
+.pytest_cache/
