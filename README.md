@@ -122,6 +122,7 @@ python main.py inspect -n 5                 # reports for the most extreme cases
 `color` reads the mask written by `predict` (`data/outputs/mask_unet.png` by default), so run `predict` on the same image first, or pass `--mask`.
 
 Training on a CPU is far too slow to be practical (I estimate more than 20 minutes per epoch, from a small local test). I trained on a free Colab GPU with [`notebooks/colab_training.ipynb`](notebooks/colab_training.ipynb), which unzips the preprocessed data from Google Drive, trains the model and copies `best_model.pth` back to Drive. Put that file in `data/outputs/`.
+The trained weights are available in the [Releases](https://github.com/AnnaSlr/mole-segmentation/releases) page.
 
 There are a few unit tests, on small synthetic images (Dice and IoU, colour merging, pen detection, colour constancy). They need neither the dataset nor the model:
 
